@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 69px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e4e4;
+}
+
+header div.wrapper-header {
+  display: flex;
+  margin: 10.5px 48.29px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 12px 6px;
+  display: flex;
+  gap: 34px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+header form {
+  width: 357px;
+  height: 48px;
+  border-radius: 12px;
+  padding: 12px 10px;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+header form input {
+  width: 100%;
+  border: none;
+  padding: 1px;
+}
+
+header form button {
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+header form p {
+  position: absolute;
+  background-color: #fff;
+  padding: 4px 14.5px;
+  margin-top: 12.5px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+header div.middle-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header div.middle-bar button.theme {
+  height: 46px;
+  width: 46px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+header div.account {
+  display: flex;
+  gap: 16px;
+}
+
+header div.account a {
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 12px;
+}
+
+header div.account a#account-create {
+  color: blueviolet;
+}
+
+header div.account a#account-login {
+  color: white;
+  background-color: blueviolet;
+}

@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laborus</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laborus</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <a href="#"><img src="./img/laborus-logo.png" alt="Laborus Logo"></a>
+    <link rel="stylesheet" href="style.css" />
 
-        <ul class="navbar">
-          <li><a href="#" class="selected">Sobre</a></li>
-          <li><a href="#">Equipe</a></li>
-          <li><a href="#">Contato</a></li>
-          <li>
-            <a href="#" id="button"> 
-              <img src="./img/icon-donwload.png" alt="ícone de download">
-              Baixe o app
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <link rel="shortcut icon" href="./imgs/Icon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-header">
+        <img src="./imgs/Logo.svg" alt="Logo Laborus" />
 
-  <main>
-    <div>
-      <h1 class="title">Impulsionando seu futuro</h1>
+        <div class="menu-view">
+          <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="">Documentação API</a></li>
+            <li><a href="">Time Laborus</a></li>
+          </ul>
+        </div>
 
-      <p class="text">Descubra, conecte e desenvolva com Laborus a plataforma completa para sua educação e carreira. Construa uma carreira sólida, conectando-se com instituições e empresas, tudo em um único lugar. Simplifique sua jornada e alcance o sucesso com Laborus.</p>
+        <div class="middle-bar">
+          <form action="">
+            <input type="text" placeholder="Pesquisar" name="search" />
+            <button type="submit">
+              <img src="./imgs/Search.svg" alt="Ícone de pesquisar" />
+            </button>
 
-      <a href="#" class="button"> <img src="./img/icon-compass.png" alt="ícone de bússola"> Descubra seu potencial</a>
-    </div>
+            <p>Ctrl + K</p>
+          </form>
 
-    <div>
-      <img src="./img/img1.png" alt="">
-    </div>
-  </main>
+          <button class="theme">
+            <img src="./imgs/Sun.svg" alt="Logo do modo claro" />
+          </button>
+        </div>
 
-</body>
+        <div class="account">
+          <a href="#" id="account-create">Criar conta</a>
+          <a href="#" id="account-login">Fazer Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
 </html>
