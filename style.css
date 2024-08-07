@@ -8,17 +8,24 @@ body {
 }
 
 header {
-  height: 69px;
   background-color: #fff;
-  border-bottom: 1px solid #e5e4e4;
+  border-bottom: 1px solid #dcdee7;
+
+  font-size: 14px;
 }
 
 header div.wrapper-header {
   display: flex;
-  margin: 10.5px 48.29px;
 
   justify-content: space-between;
   align-items: center;
+
+  padding: 10.5px 48.29px;
+}
+
+header img.logo {
+  width: 80.43px;
+  height: 38.83px;
 }
 
 header ul {
@@ -30,13 +37,20 @@ header ul {
 
 header ul li a {
   text-decoration: none;
+
+  font-weight: 600;
+  color: #585b5f;
+}
+
+header ul li a.purple {
+  color: #8000ad;
 }
 
 header form {
   width: 357px;
   height: 48px;
   border-radius: 12px;
-  padding: 12px 10px;
+  background-color: #f2f5f9;
 
   display: flex;
   flex-direction: row-reverse;
@@ -45,7 +59,13 @@ header form {
 header form input {
   width: 100%;
   border: none;
+  border-radius: 12px;
   padding: 1px;
+
+  background-color: #f2f5f9;
+  font-size: 14px;
+  color: #585b5f;
+  font-weight: 500;
 }
 
 header form button {
@@ -53,7 +73,8 @@ header form button {
   background: none;
   border: none;
   cursor: pointer;
-  margin-right: 15px;
+  margin-right: 12px;
+  margin-left: 10px;
 }
 
 header form p {
@@ -63,6 +84,9 @@ header form p {
   margin-top: 12.5px;
   margin-right: 10px;
   border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 500;
 }
 
 header div.middle-bar {
@@ -77,6 +101,8 @@ header div.middle-bar button.theme {
   border-radius: 12px;
   border: none;
   cursor: pointer;
+
+  background-color: #f2f5f9;
 }
 
 header div.account {
@@ -88,13 +114,15 @@ header div.account a {
   text-decoration: none;
   padding: 14px 16px;
   border-radius: 12px;
+
+  font-weight: bold;
 }
 
 header div.account a#account-create {
-  color: blueviolet;
+  color: #8000ad;
 }
 
 header div.account a#account-login {
-  color: white;
-  background-color: blueviolet;
+  color: #fff;
+  background-color: #8000ad;
 }
