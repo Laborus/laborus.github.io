@@ -42,7 +42,7 @@ header ul li a {
   color: #585b5f;
 }
 
-header ul li a.purple {
+.purple {
   color: #8000ad;
 }
 
@@ -105,12 +105,12 @@ header div.middle-bar button.theme {
   background-color: #f2f5f9;
 }
 
-header div.account {
+header nav.account {
   display: flex;
   gap: 16px;
 }
 
-header div.account a {
+header nav.account a {
   text-decoration: none;
   padding: 14px 16px;
   border-radius: 12px;
@@ -118,11 +118,37 @@ header div.account a {
   font-weight: bold;
 }
 
-header div.account a#account-create {
+header nav.account a#account-create {
   color: #8000ad;
 }
 
-header div.account a#account-login {
+header nav.account a#account-login {
   color: #fff;
+  background-color: #8000ad;
+}
+
+main div.header-main {
+  display: flex;
+  gap: 44px;
+  margin-top: 51px;
+  font-size: 14px;
+  color: #585b5f;
+  font-weight: 500;
+  margin-left: 52px;
+}
+
+main div.header-main p.purple {
+  display: flex;
+  gap: 11.5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div.header-main p.purple::after {
+  content: "";
+  display: block;
+  width: 114px;
+  height: 4px;
+  border-radius: 100px;
   background-color: #8000ad;
 }
