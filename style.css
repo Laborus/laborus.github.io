@@ -204,9 +204,7 @@ main .content-container-main {
 }
 
 section.news {
-  margin-left: 48px;
-  margin-right: 21px;
-  margin-top: 44px;
+  margin: 44px 21px 44.97px 48px;
   color: #1e1e1e;
 }
 
@@ -284,4 +282,72 @@ div.news-content div p {
   line-height: 163%;
   letter-spacing: -0.25px;
   text-transform: none;
+}
+
+section.platforms {
+  margin-left: 48px;
+  margin-right: 68px;
+  margin-bottom: 45px;
+
+  height: 772px;
+  max-width: 1324px;
+}
+
+section.platforms div.wrapper-platforms {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.platforms div.platform {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  color: #fff;
+  background-color: #1e1e1e;
+  border-radius: 24px;
+  padding: 20px;
+
+  max-width: 631px;
+}
+
+section.platforms div.platform p.role {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+
+  letter-spacing: -0.25px;
+}
+
+section.platforms div.platform h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section.platforms div.platform p.text {
+  font-size: 18px;
+  font-weight: 500;
+
+  letter-spacing: -0.25px;
+  line-height: 163%;
+
+  max-width: 527px;
+}
+
+section.platforms div.platform a.purple-button {
+  max-width: 213px;
+  color: #fff;
+  font-weight: 600;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+section.platforms div.platform img.platform-img {
+  width: 272px;
+  height: 374px;
+  margin: auto;
 }
