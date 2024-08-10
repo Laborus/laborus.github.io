@@ -390,3 +390,84 @@ footer div.footer-top div.menu ul li a {
   font-weight: 500;
   color: #585b5f;
 }
+
+footer div.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  color: #585b5f;
+
+  border-top: 1px solid #dcdee7;
+  height: 69px;
+}
+
+footer div.footer-bottom p#copyright {
+  font-weight: bold;
+}
+
+footer div.footer-bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+
+  font-weight: 500;
+}
+
+footer div.footer-bottom ul li a {
+  text-decoration: none;
+  color: #585b5f;
+}
+
+footer div.footer-bottom form {
+  display: flex;
+  background-color: #f2f5f9;
+  max-width: 372px;
+  border-radius: 24px;
+}
+
+footer div.footer-bottom form input {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #585b5f;
+
+  background-color: #f2f5f9;
+  border-radius: 24px;
+  border: none;
+
+  padding: 14px 16px;
+
+  width: 247px;
+  margin-right: 4px;
+}
+
+footer div.footer-bottom form button {
+  white-space: nowrap;
+  width: 119px;
+  padding: 14px 16px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer div.footer-bottom button#language {
+  color: #1e1e1e;
+  background-color: #fff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 10px;
+  border: 1px solid #dcdee7;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
