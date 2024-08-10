@@ -5,6 +5,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #fafafc;
 }
 
 header {
@@ -350,4 +351,42 @@ section.platforms div.platform img.platform-img {
   width: 272px;
   height: 374px;
   margin: auto;
+}
+
+footer {
+  background-color: #fff;
+}
+
+footer div.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+  height: 160px;
+
+  border-top: 1px solid #dcdee7;
+}
+
+footer div.footer-top div.menu h4.menu-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #585b5f;
+}
+
+footer div.footer-top div.menu ul {
+  list-style: none;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer div.footer-top div.menu ul li a {
+  display: flex;
+  gap: 6px;
+
+  text-decoration: none;
+  font-style: 14px;
+  font-weight: 500;
+  color: #585b5f;
 }
