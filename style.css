@@ -205,7 +205,8 @@ main .content-container-main {
 }
 
 section.news {
-  margin: 44px 21px 44.97px 48px;
+  margin: 44px auto 44.97px auto;
+  max-width: 1372px;
   color: #1e1e1e;
 }
 
@@ -286,12 +287,11 @@ div.news-content div p {
 }
 
 section.platforms {
-  margin-left: 48px;
-  margin-right: 68px;
+  margin: auto;
   margin-bottom: 45px;
 
   height: 772px;
-  max-width: 1324px;
+  max-width: 1372px;
 }
 
 section.platforms div.wrapper-platforms {
@@ -471,3 +471,15 @@ footer div.footer-bottom button#language {
 
   cursor: pointer;
 }
+/* 
+@media (min-width: 1441px) {
+  section.news {
+    max-width: 1612px;
+    padding-inline: 48px;
+  }
+
+  section.platforms {
+    max-width: 1612px;
+    padding-inline: 48px;
+  }
+} */
