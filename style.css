@@ -7,14 +7,36 @@
   --background-primary: #fff;
   --background-secondary: #fafafc;
   --background-inputs: #f2f5f9;
+  --text-primary: #1e1e1e;
   --border-primary: #dcdee7;
 }
 
 [data-theme="dark"] {
   --background-primary: #0d0d0d;
   --background-secondary: #0d0d0d;
-  --background-inputs: #0d0d0d;
+  --background-inputs: #1e1e1e;
+  --text-primary: #d4d4d4;
   --border-primary: #1e1e1e;
+
+  header img#logoWhite {
+    display: none;
+  }
+
+  header img#logoDark {
+    display: block;
+  }
+
+  header div.middle-bar label img#SunIcon {
+    display: none;
+  }
+
+  header div.middle-bar label img#MoonIcon {
+    display: block;
+  }
+
+  button#language svg path {
+    fill: var(--text-primary);
+  }
 }
 
 body {
@@ -40,6 +62,10 @@ header div.wrapper-header {
 header img.logo {
   width: 80.43px;
   height: 38.83px;
+}
+
+header img#logoDark {
+  display: none;
 }
 
 header ul {
@@ -128,6 +154,10 @@ header div.middle-bar label.theme-switch {
 header div.middle-bar label.theme-switch input {
   visibility: hidden;
   position: absolute;
+}
+
+header div.middle-bar label img#MoonIcon {
+  display: none;
 }
 
 header nav.account {
@@ -231,13 +261,13 @@ main .content-container-main {
 section.news {
   margin: 44px auto 44.97px auto;
   max-width: 1372px;
-  color: #1e1e1e;
+  color: var(--text-primary);
 }
 
 section h2.section-title {
   font-size: 36px;
   font-weight: bold;
-  color: #1e1e1e;
+  color: var(--text-primary);
 
   margin-bottom: 36px;
 }
@@ -262,7 +292,7 @@ section div.news p {
 section div.news h3 {
   font-size: 24px;
   font-weight: bold;
-  color: #1e1e1e;
+  color: var(--text-primary);
   margin-top: 31px;
 }
 
@@ -302,7 +332,7 @@ div.news-content div img {
 }
 
 div.news-content div p {
-  color: #1e1e1e;
+  color: var(--text-primary);
   font-size: 18px;
   font-weight: 500;
   line-height: 163%;
@@ -478,7 +508,7 @@ footer div.footer-bottom form button {
 }
 
 footer div.footer-bottom button#language {
-  color: #1e1e1e;
+  color: var(--text-primary);
   background-color: var(--background-primary);
 
   font-family: "Inter", sans-serif;
