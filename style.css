@@ -3,15 +3,28 @@
   padding: 0;
 }
 
+:root {
+  --background-primary: #fff;
+  --background-secondary: #fafafc;
+  --background-inputs: #f2f5f9;
+  --border-primary: #dcdee7;
+}
+
+[data-theme="dark"] {
+  --background-primary: #0d0d0d;
+  --background-secondary: #0d0d0d;
+  --background-inputs: #0d0d0d;
+  --border-primary: #1e1e1e;
+}
+
 body {
   font-family: "Inter", sans-serif;
-  background-color: #fafafc;
+  background-color: var(--background-primary);
 }
 
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #dcdee7;
-
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--border-primary);
   font-size: 14px;
 }
 
@@ -51,7 +64,9 @@ header form {
   width: 357px;
   height: 48px;
   border-radius: 12px;
-  background-color: #f2f5f9;
+  background-color: var(--background-inputs);
+
+  color: #585b5f;
 
   display: flex;
   flex-direction: row-reverse;
@@ -63,7 +78,7 @@ header form input {
   border-radius: 12px;
   padding: 1px;
 
-  background-color: #f2f5f9;
+  background-color: var(--background-inputs);
   font-size: 14px;
   color: #585b5f;
   font-weight: 500;
@@ -80,7 +95,7 @@ header form button {
 
 header form p {
   position: absolute;
-  background-color: #fff;
+  background-color: var(--background-primary);
   padding: 4px 14.5px;
   margin-top: 12.5px;
   margin-right: 10px;
@@ -96,14 +111,23 @@ header div.middle-bar {
   gap: 16px;
 }
 
-header div.middle-bar button.theme {
+header div.middle-bar label.theme-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 46px;
   width: 46px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
 
-  background-color: #f2f5f9;
+  background-color: var(--background-inputs);
+}
+
+header div.middle-bar label.theme-switch input {
+  visibility: hidden;
+  position: absolute;
 }
 
 header nav.account {
@@ -221,10 +245,10 @@ section h2.section-title {
 section div.news {
   box-sizing: border-box;
   padding: 20px;
-  background-color: #f2f5f9;
+  background-color: var(--background-inputs);
 
   border-radius: 24px;
-  border: 1px solid #dcdee7;
+  border: 1px solid var(--border-primary);
   max-height: 510.03px;
 }
 
@@ -354,7 +378,7 @@ section.platforms div.platform img.platform-img {
 }
 
 footer {
-  background-color: #fff;
+  background-color: var(--background-primary);
 }
 
 footer div.footer-top {
@@ -364,7 +388,7 @@ footer div.footer-top {
   align-content: space-around;
   height: 160px;
 
-  border-top: 1px solid #dcdee7;
+  border-top: 1px solid var(--border-primary);
 }
 
 footer div.footer-top div.menu h4.menu-title {
@@ -398,7 +422,7 @@ footer div.footer-bottom {
 
   color: #585b5f;
 
-  border-top: 1px solid #dcdee7;
+  border-top: 1px solid var(--border-primary);
   height: 69px;
 }
 
@@ -421,7 +445,7 @@ footer div.footer-bottom ul li a {
 
 footer div.footer-bottom form {
   display: flex;
-  background-color: #f2f5f9;
+  background-color: var(--background-inputs);
   max-width: 372px;
   border-radius: 24px;
 }
@@ -432,7 +456,7 @@ footer div.footer-bottom form input {
   font-weight: 500;
   color: #585b5f;
 
-  background-color: #f2f5f9;
+  background-color: var(--background-inputs);
   border-radius: 24px;
   border: none;
 
@@ -455,7 +479,7 @@ footer div.footer-bottom form button {
 
 footer div.footer-bottom button#language {
   color: #1e1e1e;
-  background-color: #fff;
+  background-color: var(--background-primary);
 
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -466,7 +490,7 @@ footer div.footer-bottom button#language {
   gap: 12px;
 
   padding: 12px 10px;
-  border: 1px solid #dcdee7;
+  border: 1px solid var(--border-primary);
   border-radius: 12px;
 
   cursor: pointer;
