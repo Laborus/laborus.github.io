@@ -623,7 +623,7 @@ footer div.footer-bottom button#language {
   }
 
   section.platforms div.platform img.platform-img {
-    width: auto;
+    width: 100%;
   }
 
   section.platforms div.wrapper-platforms {
@@ -637,6 +637,31 @@ footer div.footer-bottom button#language {
   }
   header ul {
     gap: 24px;
+  }
+
+  main div.header-main {
+    margin-left: 7px;
+  }
+
+  .content-container-main h1 {
+    font-size: 40px;
+  }
+
+  section.platforms {
+    max-width: 427px;
+    margin: 0px;
+    margin-bottom: 45px;
+    padding-inline: 20px;
+  }
+
+  footer div.footer-bottom form input {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  footer div.footer-bottom form button {
+    width: 100%;
+    max-width: 118.58px;
   }
 }
 
