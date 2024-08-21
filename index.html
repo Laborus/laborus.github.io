@@ -13,58 +13,69 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
 
     <link rel="shortcut icon" href="./imgs/Icon.svg" type="image/x-icon" />
   </head>
   <body>
     <header>
       <div class="wrapper-header">
-        <img
-          id="logoWhite"
-          class="logo"
-          src="./imgs/Logo.svg"
-          alt="Logo Laborus"
-        />
-        <img
-          id="logoDark"
-          class="logo"
-          src="./imgs/LogoDark.svg"
-          alt="Logo Laborus dark mode"
-        />
+        <div class="mobile">
+          <img
+            id="logoWhite"
+            class="logo"
+            src="./imgs/Logo.svg"
+            alt="Logo Laborus"
+          />
+          <img
+            id="logoDark"
+            class="logo"
+            src="./imgs/LogoDark.svg"
+            alt="Logo Laborus dark mode"
+          />
 
-        <nav class="menu-view">
-          <ul>
-            <li><a href="" class="purple">Início</a></li>
-            <li><a href="">Documentação API</a></li>
-            <li><a href="">Time Laborus</a></li>
-          </ul>
-        </nav>
-
-        <div class="middle-bar">
-          <form action="">
-            <input type="text" placeholder="Pesquisar" name="search" />
-            <button type="submit">
-              <img src="./imgs/Search.svg" alt="Ícone de pesquisar" />
-            </button>
-
-            <p>Ctrl + K</p>
-          </form>
-
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <img id="SunIcon" src="./imgs/Sun.svg" alt="Logo do modo claro" />
-            <img
-              id="MoonIcon"
-              src="./imgs/Moon.svg"
-              alt="Logo do modo escuro"
-            />
-          </label>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
-        <nav class="account">
-          <a href="#" id="account-create">Criar conta</a>
-          <a href="#" id="account-login">Fazer Login</a>
-        </nav>
+        <div class="nav">
+          <nav class="menu-view">
+            <ul>
+              <li><a href="" class="purple">Início</a></li>
+              <li><a href="">Documentação API</a></li>
+              <li><a href="">Time Laborus</a></li>
+            </ul>
+          </nav>
+
+          <div class="middle-bar">
+            <form action="">
+              <input type="text" placeholder="Pesquisar" name="search" />
+              <button type="submit">
+                <img src="./imgs/Search.svg" alt="Ícone de pesquisar" />
+              </button>
+
+              <p>Ctrl + K</p>
+            </form>
+
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <img id="SunIcon" src="./imgs/Sun.svg" alt="Logo do modo claro" />
+              <img
+                id="MoonIcon"
+                src="./imgs/Moon.svg"
+                alt="Logo do modo escuro"
+              />
+            </label>
+          </div>
+
+          <nav class="account">
+            <a href="#" id="account-create">Criar conta</a>
+            <a href="#" id="account-login">Fazer Login</a>
+          </nav>
+        </div>
       </div>
     </header>
 

@@ -50,6 +50,13 @@ header {
   font-size: 14px;
 }
 
+header div.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1173px;
+}
+
 header div.wrapper-header {
   display: flex;
 
@@ -527,6 +534,7 @@ footer div.footer-bottom button#language {
 }
 
 @media (max-width: 1390px) {
+  header div.nav,
   header div.wrapper-header {
     white-space: nowrap;
     padding-inline: 20px;
@@ -557,8 +565,10 @@ footer div.footer-bottom button#language {
 }
 
 @media (max-width: 1200px) {
+  header div.nav,
   header div.wrapper-header {
     flex-direction: column;
+    align-items: center;
   }
 
   section div.news-content {
@@ -637,6 +647,8 @@ footer div.footer-bottom button#language {
   }
   header ul {
     gap: 24px;
+    flex-direction: column;
+    text-align: center;
   }
 
   main div.header-main {
