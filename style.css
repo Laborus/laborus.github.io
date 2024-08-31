@@ -117,6 +117,36 @@ header form input {
   font-weight: 500;
 }
 
+/* autocomplete resource */
+
+.autocomplete-items {
+  display: block;
+
+  position: absolute;
+  top: 65px;
+  z-index: 1000;
+  overflow-y: auto;
+
+  width: 100%;
+  max-width: 357px; /* 312px */
+
+  padding: unset;
+
+  background-color: var(--background-inputs);
+  border-radius: 12px;
+}
+
+.autocomplete-items li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.autocomplete-items li:hover {
+  background-color: #585b5f10;
+}
+
+/* autocomplete resource */
+
 header form button {
   display: inline-block;
   background: none;
@@ -347,7 +377,7 @@ div.news-content div p {
   text-transform: none;
 }
 
-section.platforms {
+section#platforms {
   margin: auto;
   margin-bottom: 45px;
 
@@ -355,12 +385,12 @@ section.platforms {
   max-width: 1372px;
 }
 
-section.platforms div.wrapper-platforms {
+section#platforms div.wrapper-platforms {
   display: flex;
   justify-content: space-between;
 }
 
-section.platforms div.platform {
+section#platforms div.platform {
   display: flex;
   flex-direction: column;
   gap: 31px;
@@ -373,7 +403,7 @@ section.platforms div.platform {
   max-width: 631px;
 }
 
-section.platforms div.platform p.role {
+section#platforms div.platform p.role {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -381,12 +411,12 @@ section.platforms div.platform p.role {
   letter-spacing: -0.25px;
 }
 
-section.platforms div.platform h3 {
+section#platforms div.platform h3 {
   font-size: 24px;
   font-weight: bold;
 }
 
-section.platforms div.platform p.text {
+section#platforms div.platform p.text {
   font-size: 18px;
   font-weight: 500;
 
@@ -396,7 +426,7 @@ section.platforms div.platform p.text {
   max-width: 527px;
 }
 
-section.platforms div.platform a.purple-button {
+section#platforms div.platform a.purple-button {
   max-width: 213px;
   color: #fff;
   font-weight: 600;
@@ -408,7 +438,7 @@ section.platforms div.platform a.purple-button {
   gap: 12px;
 }
 
-section.platforms div.platform img.platform-img {
+section#platforms div.platform img.platform-img {
   width: 272px;
   height: 374px;
   margin: auto;
@@ -559,7 +589,7 @@ footer div.footer-bottom button#language {
   }
 
   section.news,
-  section.platforms {
+  section#platforms {
     margin-inline: 20px;
   }
 }
@@ -578,12 +608,16 @@ footer div.footer-bottom button#language {
     display: none;
   }
 
-  section.platforms {
+  section#platforms {
     height: auto;
   }
 
-  section.platforms div.wrapper-platforms {
+  section#platforms div.wrapper-platforms {
     gap: 20px;
+  }
+
+  .autocomplete-items {
+    top: 185px;
   }
 }
 
@@ -628,15 +662,15 @@ footer div.footer-bottom button#language {
     max-height: none;
   }
 
-  section.platforms div.platform {
+  section#platforms div.platform {
     width: 100%;
   }
 
-  section.platforms div.platform img.platform-img {
+  section#platforms div.platform img.platform-img {
     width: 100%;
   }
 
-  section.platforms div.wrapper-platforms {
+  section#platforms div.wrapper-platforms {
     flex-wrap: wrap;
   }
 }
@@ -659,7 +693,7 @@ footer div.footer-bottom button#language {
     font-size: 40px;
   }
 
-  section.platforms {
+  section#platforms {
     max-width: 427px;
     margin: 0px;
     margin-bottom: 45px;
@@ -675,6 +709,11 @@ footer div.footer-bottom button#language {
     width: 100%;
     max-width: 118.58px;
   }
+
+  .autocomplete-items {
+    max-width: 215px;
+    top: 240px;
+  }
 }
 
 /* 
@@ -684,7 +723,7 @@ footer div.footer-bottom button#language {
     padding-inline: 48px;
   }
 
-  section.platforms {
+  section#platforms {
     max-width: 1612px;
     padding-inline: 48px;
   }

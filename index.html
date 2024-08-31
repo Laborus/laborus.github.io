@@ -52,8 +52,16 @@
 
           <div class="middle-bar">
             <form action="">
-              <input type="text" placeholder="Pesquisar" name="search" />
-              <button type="submit">
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Pesquisar"
+                name="search"
+              />
+
+              <ul id="autocomplete-list" class="autocomplete-items"></ul>
+
+              <button id="search-button" type="submit">
                 <img src="./imgs/Search.svg" alt="Ícone de pesquisar" />
               </button>
 
@@ -105,7 +113,7 @@
       </div>
     </main>
 
-    <section class="news">
+    <section id="news" class="news">
       <h2 class="section-title">Novidades</h2>
 
       <div class="news">
@@ -154,7 +162,7 @@
       </div>
     </section>
 
-    <section class="platforms">
+    <section id="platforms">
       <h2 class="section-title">Plataformas Compatíveis</h2>
 
       <div class="wrapper-platforms">
@@ -204,7 +212,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="footer">
       <div class="footer-top">
         <div class="menu">
           <h4 class="menu-title">Plataformas Compatíveis</h4>
@@ -319,5 +327,6 @@
     </footer>
 
     <script src="./scripts.js"></script>
+    <script src="./search.js"></script>
   </body>
 </html>
