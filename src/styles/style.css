@@ -525,12 +525,19 @@ footer div.footer-bottom form input {
 
   background-color: var(--background-inputs);
   border-radius: 24px;
-  border: none;
+  border: 1px solid transparent;
 
   padding: 14px 16px;
 
   width: 247px;
   margin-right: 4px;
+}
+
+footer div.footer-bottom form small {
+  visibility: hidden;
+  padding: 0px 16px;
+  position: absolute;
+  margin-top: 48px;
 }
 
 footer div.footer-bottom form button {
@@ -542,6 +549,28 @@ footer div.footer-bottom form button {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
+}
+
+/* form error */
+
+footer div.footer-bottom form.error input {
+  border: 1px solid red;
+}
+
+footer div.footer-bottom form.error small {
+  visibility: visible;
+  color: red;
+}
+
+/* form success */
+
+footer div.footer-bottom form.success input {
+  border: 1px solid green;
+}
+
+footer div.footer-bottom form.success small {
+  visibility: visible;
+  color: green;
 }
 
 footer div.footer-bottom button#language {
