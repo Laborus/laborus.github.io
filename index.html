@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/mobile.css" />
 
     <link rel="shortcut icon" href="./imgs/Icon.svg" type="image/x-icon" />
   </head>
@@ -24,13 +24,13 @@
           <img
             id="logoWhite"
             class="logo"
-            src="./imgs/Logo.svg"
+            src="./src/imgs/Logo.svg"
             alt="Logo Laborus"
           />
           <img
             id="logoDark"
             class="logo"
-            src="./imgs/LogoDark.svg"
+            src="./src/imgs/LogoDark.svg"
             alt="Logo Laborus dark mode"
           />
 
@@ -62,7 +62,7 @@
               <ul id="autocomplete-list" class="autocomplete-items"></ul>
 
               <button id="search-button" type="submit">
-                <img src="./imgs/Search.svg" alt="Ícone de pesquisar" />
+                <img src="./src/imgs/Search.svg" alt="Ícone de pesquisar" />
               </button>
 
               <p>Ctrl + K</p>
@@ -70,10 +70,14 @@
 
             <label class="theme-switch" for="checkbox">
               <input type="checkbox" id="checkbox" />
-              <img id="SunIcon" src="./imgs/Sun.svg" alt="Logo do modo claro" />
+              <img
+                id="SunIcon"
+                src="./src/imgs/Sun.svg"
+                alt="Logo do modo claro"
+              />
               <img
                 id="MoonIcon"
-                src="./imgs/Moon.svg"
+                src="./src/imgs/Moon.svg"
                 alt="Logo do modo escuro"
               />
             </label>
@@ -107,7 +111,7 @@
         </div>
 
         <img
-          src="./imgs/ImagesApp.svg"
+          src="./src/imgs/ImagesApp.svg"
           alt="Imagens representativas do aplicativo Laborus"
         />
       </div>
@@ -124,28 +128,28 @@
         <div class="news-container">
           <div class="news-content">
             <div>
-              <img src="./imgs/PlusIcon.svg" alt="Ícone de adição" />
+              <img src="./src/imgs/PlusIcon.svg" alt="Ícone de adição" />
               <p>
                 Baixe o aplicativo Laborus para dispositivos Android clicando no
                 botão abaixo.
               </p>
             </div>
             <div>
-              <img src="./imgs/PlusIcon.svg" alt="Ícone de adição" />
+              <img src="./src/imgs/PlusIcon.svg" alt="Ícone de adição" />
               <p>
                 Baixe o aplicativo Laborus para dispositivos Android clicando no
                 botão abaixo.
               </p>
             </div>
             <div>
-              <img src="./imgs/PlusIcon.svg" alt="Ícone de adição" />
+              <img src="./src/imgs/PlusIcon.svg" alt="Ícone de adição" />
               <p>
                 Baixe o aplicativo Laborus para dispositivos Android clicando no
                 botão abaixo.
               </p>
             </div>
             <div>
-              <img src="./imgs/PlusIcon.svg" alt="Ícone de adição" />
+              <img src="./src/imgs/PlusIcon.svg" alt="Ícone de adição" />
               <p>
                 Baixe o aplicativo Laborus para dispositivos Android clicando no
                 botão abaixo.
@@ -155,7 +159,7 @@
 
           <img
             id="news-img"
-            src="./imgs/ImageNews.svg"
+            src="./src/imgs/ImageNews.svg"
             alt="Imagem mostrando várias telas da Laborus"
           />
         </div>
@@ -178,12 +182,12 @@
 
           <img
             class="platform-img"
-            src="./imgs/ImagePlatform.svg"
+            src="./src/imgs/ImagePlatform.svg"
             alt="Imagem do Aplicativo Laborus"
           />
 
           <a class="purple-button" href="">
-            <img src="./imgs/AndroidIcon.svg" alt="Ícone do Android" />
+            <img src="./src/imgs/AndroidIcon.svg" alt="Ícone do Android" />
             Baixar Aplicativo
           </a>
         </div>
@@ -200,12 +204,12 @@
 
           <img
             class="platform-img"
-            src="./imgs/ImagePlatform.svg"
+            src="./src/imgs/ImagePlatform.svg"
             alt="Imagem do Aplicativo Laborus"
           />
 
           <a class="purple-button" href="">
-            <img src="./imgs/AppleIcon.svg" alt="Ícone da Apple" />
+            <img src="./src/imgs/AppleIcon.svg" alt="Ícone da Apple" />
             Baixar Aplicativo
           </a>
         </div>
@@ -238,7 +242,7 @@
             <li>
               <a href="https://www.instagram.com/laborus_/"
                 ><img
-                  src="./imgs/InstagramIcon.svg"
+                  src="./src/imgs/InstagramIcon.svg"
                   alt="Ícone do Instagram"
                 />Instagram</a
               >
@@ -246,7 +250,7 @@
             <li>
               <a href="https://www.youtube.com/channel/UCc4dx8tBcm-H9sY8GBID1ng"
                 ><img
-                  src="./imgs/YoutubeIcon.svg"
+                  src="./src/imgs/YoutubeIcon.svg"
                   alt="Ícone do Youtube"
                 />Youtube</a
               >
@@ -326,7 +330,8 @@
       </div>
     </footer>
 
-    <script src="./scripts.js"></script>
-    <script src="./search.js"></script>
+    <script src="./src/scripts/menu.js"></script>
+    <script src="./src/scripts/theme.js"></script>
+    <script src="./src/scripts/search.js"></script>
   </body>
 </html>
