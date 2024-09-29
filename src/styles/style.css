@@ -295,56 +295,6 @@ main .content-container-main {
   text-decoration: none;
 }
 
-section.marketing {
-  background-color: var(--background-secondary);
-  padding: 40px;
-  margin: 50px auto;
-  border-radius: 12px;
-  max-width: 1200px;
-}
-
-section.marketing h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: var(--text-primary);
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-section.marketing .marketing-content {
-  margin-bottom: 30px;
-}
-
-section.marketing .marketing-content p {
-  font-size: 18px;
-  color: var(--text-primary);
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-section.marketing h3 {
-  font-size: 24px;
-  color: var(--text-primary);
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-section.marketing ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-section.marketing ul li {
-  font-size: 18px;
-  color: var(--text-primary);
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-section.marketing ul li strong {
-  color: #8000ad;
-}
-
 section.news {
   margin: 44px auto 44.97px auto;
   max-width: 1372px;
